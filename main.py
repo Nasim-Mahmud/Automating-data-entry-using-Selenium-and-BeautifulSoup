@@ -14,7 +14,6 @@ headers = {
 }
 response = requests.get(url=link, headers=headers).text
 soup = BeautifulSoup(response, "html.parser")
-listing = soup.select(".list-card-top a")
+listing = soup.select("property-card-data")
 for l in listing:
-    g = l["href"]
-    print(g)
+    print(l.get("href"))
