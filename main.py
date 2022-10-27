@@ -11,7 +11,6 @@ headers = {
     "Accept-Language": "en-US",
     "Accept-Encoding": "gzip, deflate",
     "Accept-Charset": "utf-8"
-
 }
 response = requests.get(url=link, headers=headers).text
 
