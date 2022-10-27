@@ -13,7 +13,7 @@ headers = {
     "Accept-Charset": "utf-8"
 }
 response = requests.get(url=link, headers=headers).text
-
 soup = BeautifulSoup(response, "html.parser")
-print(soup.prettify())
-
+listing = soup.find_all(name="a", id="search-page-list-container")
+for l in listing:
+    print(l.text)
