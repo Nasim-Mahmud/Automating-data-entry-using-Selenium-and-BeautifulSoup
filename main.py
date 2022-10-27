@@ -10,4 +10,7 @@ link = "https://www.zillow.com/homes/for_rent/?searchQueryState=%7B%22pagination
 response = requests.get(url=link).text
 
 soup = BeautifulSoup(response, "html.parser")
-print(soup.prettify())
+
+items = soup.find(name="li", class_=".enEXBq .with_constellation")
+print(items)
+
