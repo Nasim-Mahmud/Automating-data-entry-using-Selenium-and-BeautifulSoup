@@ -14,6 +14,7 @@ headers = {
 }
 response = requests.get(url=link, headers=headers).text
 soup = BeautifulSoup(response, "html.parser")
-listing = soup.find_all(name="a", id="search-page-list-container")
+listing = soup.select(".list-card-top a")
 for l in listing:
-    print(l.text)
+    g = l["href"]
+    print(g)
