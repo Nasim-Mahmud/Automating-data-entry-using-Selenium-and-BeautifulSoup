@@ -16,4 +16,3 @@ soup = BeautifulSoup(response, "html.parser")
 listing = soup.select("property-card-data")
 for l in listing:
     print(l.get("href"))
-
