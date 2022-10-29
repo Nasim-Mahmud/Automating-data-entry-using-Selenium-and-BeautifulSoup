@@ -11,6 +11,7 @@ headers = {
     "Accept-Encoding": "gzip, deflate",
     "Accept-Charset": "utf-8"
 }
+
 response = requests.get(url=link, headers=headers).text
 soup = BeautifulSoup(response, "html.parser")
 listing = soup.select("property-card-data")
