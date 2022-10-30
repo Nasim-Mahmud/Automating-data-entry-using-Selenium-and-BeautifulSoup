@@ -31,8 +31,12 @@ sub_list = []
 for l in listing:
     link = l["href"]
     sub_list.append(link)
-print(sub_list)
 sub_list = list(dict.fromkeys(sub_list))
-print(sub_list)
 
+for sub in sub_list:
+    if "http" not in sub:
+        main_list.append(f"https://www.zillow.com{sub}")
+    else:
+        main_list.append(sub)
 
+print(main_list)
