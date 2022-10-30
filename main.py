@@ -25,7 +25,7 @@ data = response.text
 soup = BeautifulSoup(data, "html.parser")
 listing = soup.select(".bfcHMx a")
 
-#----------------------------------------------------------------------------- LINKS
+# ----------------------------------------------------------------------------- LINKS
 main_list = []
 sub_list = []
 for l in listing:
@@ -41,7 +41,7 @@ for sub in sub_list:
 
 # print(main_list)
 
-#----------------------------------------------------------------------- PRICES
+# ----------------------------------------------------------------------- PRICES
 price_list = []
 prices = soup.select(".hRqIYX")
 for p in prices:
