@@ -13,7 +13,5 @@ headers = {
 }
 response = requests.get(url=link, headers=headers).text
 soup = BeautifulSoup(response, "html.parser")
-listing = soup.select(".lhOvrt a")
-for l in listing:
-    link = l["href"]
-    print(link)
+listing = soup.select(".result-list-container")
+print(listing)
