@@ -19,7 +19,13 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0",
     "Accept-Language": "en-US",
 }
-response = requests.get(url=link, headers=headers).text
-soup = BeautifulSoup(response, "html.parser")
-listing = soup.select("head")
+response = requests.get(url=link, headers=headers)
+data = response.text
+# print(data)
+soup = BeautifulSoup(data, "html.parser")
+listing = soup.select(".bfcHMx a")
 print(listing)
+for l in listing:
+    link = l["href"]
+    print(link)
+
