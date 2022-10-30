@@ -27,7 +27,12 @@ listing = soup.select(".bfcHMx a")
 
 
 main_list = []
+sub_list = []
 for l in listing:
     link = l["href"]
+    sub_list.append(link)
+print(sub_list)
+sub_list = list(dict.fromkeys(sub_list))
+print(sub_list)
 
 
