@@ -24,8 +24,10 @@ data = response.text
 # print(data)
 soup = BeautifulSoup(data, "html.parser")
 listing = soup.select(".bfcHMx a")
-print(listing)
+
+
+main_list = []
 for l in listing:
     link = l["href"]
-    print(link)
+
 
