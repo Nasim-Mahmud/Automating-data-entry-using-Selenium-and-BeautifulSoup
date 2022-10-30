@@ -26,7 +26,7 @@ soup = BeautifulSoup(data, "html.parser")
 listing = soup.select(".bfcHMx a")
 
 # ----------------------------------------------------------------------------- LINKS
-main_list = []
+link_list = []
 sub_list = []
 for l in listing:
     link = l["href"]
@@ -35,11 +35,11 @@ sub_list = list(dict.fromkeys(sub_list))
 
 for sub in sub_list:
     if "http" not in sub:
-        main_list.append(f"https://www.zillow.com{sub}")
+        link_list.append(f"https://www.zillow.com{sub}")
     else:
-        main_list.append(sub)
+        link_list.append(sub)
 
-# print(main_list)
+# print(link_list)
 
 # ----------------------------------------------------------------------- PRICES
 price_list = []
