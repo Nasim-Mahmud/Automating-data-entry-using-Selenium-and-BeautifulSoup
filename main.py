@@ -18,8 +18,6 @@ link = "https://www.zillow.com/homes/for_rent/?searchQueryState=%7B%22pagination
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0",
     "Accept-Language": "en-US",
-    "Accept-Encoding": "gzip, deflate",
-    "Accept-Charset": "utf-8"
 }
 response = requests.get(url=link, headers=headers).text
 soup = BeautifulSoup(response, "html.parser")
