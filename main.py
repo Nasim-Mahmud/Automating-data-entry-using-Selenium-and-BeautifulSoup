@@ -41,7 +41,7 @@ for sub in sub_list:
 
 # print(link_list)
 
-# ----------------------------------------------------------------------- PRICES
+# ----------------------------------------------------------------------------- PRICES
 price_list = []
 prices = soup.select(".hRqIYX")
 for p in prices:
