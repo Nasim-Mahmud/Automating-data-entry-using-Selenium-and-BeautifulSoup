@@ -44,5 +44,7 @@ for sub in sub_list:
 #----------------------------------------------------------------------- PRICES
 price_list = []
 prices = soup.select(".hRqIYX")
-for price in prices:
-    print(price.get_text())
+for p in prices:
+    price = p.get_text()
+    price_list.append(price)
+print(price_list)
