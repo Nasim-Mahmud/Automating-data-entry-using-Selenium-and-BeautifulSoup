@@ -48,4 +48,3 @@ for p in prices:
     price = p.get_text()
     price_list.append(price)
 print(price_list)
-
