@@ -4,7 +4,6 @@ from selenium.webdriver.chrome import webdriver
 from bs4 import BeautifulSoup
 import requests
 
-
 link = "https://www.zillow.com/homes/for_rent/?searchQueryState=%7B%22pagination" \
        "%22%3A%7B%7D%2C%22mapBounds%22%3A%7B%22west%22%3A-122.64481581640625%2C%22east" \
        "%22%3A-122.22184218359375%2C%22south%22%3A37.703343724016136%2C%22north%22%3A37" \
