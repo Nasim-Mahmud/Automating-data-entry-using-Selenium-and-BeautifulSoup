@@ -14,7 +14,6 @@ link = "https://www.zillow.com/homes/for_rent/?searchQueryState=%7B%22pagination
        "%22%3A%7B%22value%22%3Atrue%7D%2C%22fsbo%22%3A%7B%22value%22%3Afalse%7D%2C%22cmsn%22" \
        "%3A%7B%22value%22%3Afalse%7D%2C%22fsba%22%3A%7B%22value%22%3Afalse%7D%7D%2C%22isListVisible" \
        "%22%3Atrue%7D"
-
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100101 Firefox/25.0",
     "Accept-Language": "en-US",
